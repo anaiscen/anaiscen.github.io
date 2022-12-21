@@ -4,47 +4,50 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>La Cuisine d'Aujourd'hui</title>
+        <title>La Cuisine d'Aujourd'hui - Accueil</title>
         <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <nav class="navbar">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/logo.png" alt="Logo" height="70" width="70"></a>                
-                <div>
-                    <ul>                
-                        <li><a href="#about">Notre histoire</a></li>
-                        <li><a href="#entree">Les entrées</a></li>
-                        <li><a href="#plet">Les plats</a></li>
-                        <li><a href="#dessert">Les desserts</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
         <header>
-            <div>
-                <img src="assets/avatar.jpg" alt="food" height="600" width="600"/>
-                <h1>La Cuisine d'Ajourd'hui</h1>
+            <nav class="navbar">
+                <a class="logo" href="#page-top"><img src="assets/logo.png" alt="Logo" height="70" width="70"></a>              
+                    <ul class="nav-links">   
+                        <input type="checkbox" id="checkbox_toggle" />   
+                        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                        <div class="menu">
+                            <li><a href="#about">Notre histoire</a></li>
+                            <li><a href="#appetizer">Les entrées</a></li>
+                            <li><a href="#main-dish">Les plats</a></li>
+                            <li><a href="#dessert">Les desserts</a></li>
+                        </div>
+                    </ul>
+            </nav>
+        </header>
+        <div class="hero-image">
+            <div class="hero-text"> 
+                <h1 style="font-size: 50px;">La Cuisine d'Aujourd'hui</h1>
                 <p>Trouvez des recettes faciles et bon marché</p>
             </div>
-        </header>
+        </div>
         <section id="about">
-            <div class="container">
-                <h2>Notre Histoire</h2>
+            <div class="container-about">
+                <h2 class="about-heading">Notre Histoire</h2>
                 <div class="row">
-                    <div class="col-lg-8"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error maiores ex itaque reprehenderit distinctio sit, at vero repellat 
-                        sunt natus harum, deleniti reiciendis voluptatibus. Velit, molestiae doloremque excepturi cupiditate debitis eius. Corrupti quasi expedita aspernatur 
+                    <div class="p-container"><p><img src="assets/cuisinier.jpg" alt="cuisinier" height="320" width="360" class="img1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error maiores ex itaque reprehenderit distinctio sit, at vero repellat 
+                        sunt natus harum, deleniti reiciendis voluptatibus. Quae libero architecto molestiae dolor atque, neque vitae saepe! Provident quod eum doloremque recusandae temporibus 
+                        quaerat eos, sunt laboriosam omnis, dignissimos iure, quis magni autem amet. Velit, molestiae doloremque excepturi cupiditate debitis eius. Corrupti quasi expedita aspernatur 
                         mollitia saepe repudiandae sit nisi repellat blanditiis tempore veritatis consectetur, inventore ipsam voluptates iste. Repellat sapiente vitae vel 
                         harum expedita nam necessitatibus quibusdam nulla voluptatum? Id tempora reiciendis possimus similique magnam aliquam obcaecati doloremque asperiores, 
-                        quisquam vero illo laudantium ipsa odio dolores nihil. Impedit accusantium nam distinctio voluptates aliquid voluptatem dicta alias vitae. Repellat 
+                        quisquam vero illo laudantium ipsa odio dolores nihil. Quae libero architecto molestiae dolor atque, neque vitae saepe! Provident quod eum doloremque recusandae temporibus 
+                        quaerat eos, sunt laboriosam omnis, dignissimos iure, quis magni autem amet.Impedit accusantium nam distinctio voluptates aliquid voluptatem dicta alias vitae. Repellat 
                         architecto, eligendi in maiores corrupti culpa! Expedita laboriosam aliquid dolorum optio minus ipsam nesciunt possimus rerum culpa cum amet pariatur, 
                         quasi, quas tempore ipsa suscipit deserunt vitae consequuntur, adipisci sequi vel! Ipsa soluta quas accusantium facilis ducimus. Temporibus quae voluptate 
-                        quam dolore nostrum. Sunt, quibusdam voluptas odit incidunt cumque deleniti beatae dicta hic, fugiat nisi officia neque maiores, quas vero dolore.</p></div>
-                    <div class="col-lg-4 me-auto">
-                        <img src="assets/cuisinier.jpg" alt="cuisinier" height="280" width="280" />
+                        quam dolore nostrum. Sunt, quibusdam voluptas odit incidunt cumque deleniti beatae dicta hic, fugiat nisi officia neque maiores, quas vero dolore. Quae libero architecto molestiae dolor atque, neque vitae saepe! Provident quod eum doloremque recusandae temporibus 
+                        quaerat eos, sunt laboriosam omnis, dignissimos iure, quis magni autem amet. Incidunt cupiditate vitae aliquid eaque corporis quo officia tenetur modi 
+                        dolorum. Laudantium ea voluptas dolores, rem architecto ullam esse iure impedit labore fuga exercitationem autem, officia, sapiente id similique. </p>
                     </div>
-                    <div class="col-lg-8"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe delectus necessitatibus numquam perspiciatis deserunt veniam, 
+                    <div class="p2-container"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe delectus necessitatibus numquam perspiciatis deserunt veniam, 
                         cumque deleniti in explicabo unde. Quae libero architecto molestiae dolor atque, neque vitae saepe! Provident quod eum doloremque recusandae temporibus 
                         quaerat eos, sunt laboriosam omnis, dignissimos iure, quis magni autem amet. Incidunt cupiditate vitae aliquid eaque corporis quo officia tenetur modi 
                         dolorum. Laudantium ea voluptas dolores, rem architecto ullam esse iure impedit labore fuga exercitationem autem, officia, sapiente id similique. 
@@ -55,11 +58,21 @@
                         doloribus officiis porro, alias maiores nostrum assumenda deserunt officia pariatur quibusdam aperiam. Dolorem, eveniet! Mollitia, dolore, 
                         laboriosam facilis voluptatum iusto totam, voluptas asperiores temporibus saepe corporis cupiditate eaque? Officiis quia dignissimos cumque 
                         fuga aliquid laboriosam mollitia, optio minus vero eaque quae sint sed impedit sit animi error. Sed, temporibus dolorum? Dignissimos nostrum atque 
-                        consectetur possimus reprehenderit maxime soluta quaerat? Nostrum, placeat! Consectetur dolorum distinctio mollitia</p></div>
-                </div>
+                        consectetur possimus reprehenderit maxime soluta quaerat? Nostrum, placeat! Consectetur dolorum distinctio mollitia</p>
+                    </div>
+                    <div class="p2-container"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe delectus necessitatibus numquam perspiciatis deserunt veniam, 
+                        cumque deleniti in explicabo unde. Quae libero architecto molestiae dolor atque, neque vitae saepe! Provident quod eum doloremque recusandae temporibus 
+                        quaerat eos, sunt laboriosam omnis, dignissimos iure, quis magni autem amet. Incidunt cupiditate vitae aliquid eaque corporis quo officia tenetur modi 
+                        dolorum. Laudantium ea voluptas dolores, rem architecto ullam esse iure impedit labore fuga exercitationem autem, officia, sapiente id similique. 
+                        Laboriosam distinctio earum quisquam iste alias eius explicabo dolorem omnis quos esse autem, at sed quasi neque veniam nihil blanditiis tenetur. 
+                        Corrupti amet accusantium excepturi voluptas optio illo! Dignissimos nostrum atque consectetur possimus reprehenderit maxime soluta quaerat? 
+                        Nostrum, placeat! Consectetur dolorum distinctio mollitia, eius maiores, obcaecati doloremque magni voluptates porro libero nesciunt eos amet 
+                        ratione eaque omnis aut recusandae suscipit.</p>
+                    </div>
+                </div>  
             </div>
         </section>
-        <section class="appetizer">
+        <section id="appetizer">
             <h2>Les entrées</h2>
             <div class="appetizer-container">
                 <article>
@@ -88,7 +101,7 @@
                 </article>             
             </div>
         </section>
-        <section class="main-dish">
+        <section id="main-dish">
             <h2>Les plats</h2>
             <div class="main-dish-container">
                 <article>
@@ -117,7 +130,7 @@
                 </article>             
             </div>
         </section>
-        <section class="dessert">
+        <section id="dessert">
             <h2>Les desserts</h2>
             <div class="dessert-container">
                 <article>
@@ -147,19 +160,19 @@
             </div>
         </section>
         <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <a class="navbar-brand"><img src="assets/logo.png" alt="Logo" height="90" width="90"></a>
+            <div class="footer">
+                <div class="row-footer">
+                    <div class="footer-brand">
+                        <a class=""><img src="assets/logo.png" alt="Logo" height="90" width="90"></a>
                     </div>
-                    <div class="col-lg-4">                       
+                    <div class="copyright">                       
                         <div><small>Copyright &copy; Anais Cen 2022</small></div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="social">
                         <h4 class="text-uppercase mb-4">Suivez-nous</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/" target="_blank"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/" target="_blank"><i class="fab fa-fw fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/" target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="" href="https://twitter.com/" target="_blank"><img src="assets/twitter.png" alt="Logo"><i class="fab fa-fw fa-twitter"></i></a>
+                        <a class="" href="https://www.instagram.com/" target="_blank"><img src="assets/instagram.png" alt="Logo"><i class="fa fa-instagram"></i></i></a>
+                        <a class="" href="https://www.facebook.com/" target="_blank"><img src="assets/facebook.png" alt="Logo"><i class="fab fa-fw fa-facebook-f"></i></a>
                     </div>
                 </div>
             </div>
