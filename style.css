@@ -115,6 +115,252 @@ h2 {
     font-size: 2.3rem;
 }
 
+.recipe-header {
+    box-sizing: content-box;
+    display: flow-root;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 3vh;
+}
+
+.recipe-description h1 {
+    width: auto;
+    display: flex;
+    font-size: 2rem;
+    color: #544955;
+    margin-bottom: 15px;
+}
+
+.recipe-description p {
+    width: auto;
+    display: flex;
+    font-size: 1.2rem;
+    text-align: justify;
+    color: #544955;
+    margin-bottom: 22px;
+}
+
+.recipe-photo {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*.recipe-img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: scale-down;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}*/
+
+.recipe-logo {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.recipe-logo a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recipe-container {
+    height: 5vh;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    background-color: #ecddc4;
+    margin-bottom: 20px;
+}
+
+#ingredient {
+    display: block;
+    margin-left: 7vh;
+    margin-bottom: 20px;
+}
+
+.recipe-label {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    height: 20px;
+    width: 150px;
+    background-color: #ecddc4;
+    color: #544955;
+    text-align: center;
+}
+
+.container-ingredient {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container-ingredient input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #c56b74;
+}
+
+.container-ingredient:hover input ~ .checkmark {
+    background-color: #ecddc4;
+}
+
+.container-ingredient input:checked ~ .checkmark {
+    background-color: #544955;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container-ingredient input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container-ingredient .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #ecddc4;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+ol {
+    counter-reset: li;
+    list-style: none;
+    *list-style: decimal;
+    font-size: 1.2rem;
+    padding: 0;
+    margin-bottom: 2.5em;
+}
+
+ol ol {
+    margin: 0 0 0 2em;
+}
+
+.rectangle-list a{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .8em;
+    *padding: .4em;
+    margin: .5em 0 .5em 2.5em;
+    background: #c8bfc8;
+    color: #383139;
+    text-decoration: none;
+    transition: all .3s ease-out;
+    border-radius: 15px;
+}
+
+.rectangle-list a:hover{
+    background: #eee;
+}
+
+.rectangle-list a:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #c56b74;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.rectangle-list a:after{
+    position: absolute;
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;
+}
+
+.rectangle-list a:hover:after{
+    left: -.5em;
+    border-left-color: #c56b74;
+}
+
+hr.solid {
+    border-top: 4px solid #847386;
+}
+
+.form {
+    margin-top: 15px;
+}
+
+#contactForm {
+    text-align: left;
+    margin: 0 auto;
+    width: 85%;
+    padding-top: 20px;
+}
+
+.label {
+    line-height: 2;
+}
+  
+input[type="text"],
+textarea {
+    width: 30%;
+    padding: 7px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+  
+input[type="message"],
+textarea {
+    width: 100%;
+    padding: 5px 5px 60px;
+    margin-bottom: 10px;
+}
+  
+button {
+    background: #544955;
+    font-size: 1.2rem;
+    color: #ecddc4;
+    border: #544955;
+    border-radius: 15px;
+    float: right;
+    padding: 20px 35px;
+    margin-bottom: 20px;
+}
+
 .footer {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -171,7 +417,6 @@ input[type=checkbox]{
         padding: 16px 0;
     }
 
-
     .menu li:hover {
         display: inline-block;
         background-color: #ed9296;
@@ -208,5 +453,12 @@ input[type=checkbox]{
         float: none;
         width: 100%;
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .recipe-img {
+        width: auto;
+        height: auto;
     }
 }
