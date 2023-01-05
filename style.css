@@ -97,6 +97,7 @@ li {
     text-align: justify;
     padding-top: 2vh;
     color: #544955;
+    padding-bottom: 10px;
 
 }
 
@@ -318,6 +319,7 @@ ol ol {
 
 hr.solid {
     border-top: 4px solid #847386;
+    margin-bottom: 15px;
 }
 
 .form {
@@ -334,7 +336,7 @@ hr.solid {
 .label {
     line-height: 2;
 }
-  
+
 input[type="text"],
 textarea {
     width: 30%;
@@ -342,15 +344,15 @@ textarea {
     margin-bottom: 8px;
     margin-top: 8px;
 }
-  
+
 input[type="message"],
 textarea {
     width: 100%;
     padding: 5px 5px 60px;
     margin-bottom: 10px;
 }
-  
-button {
+
+#contactForm button {
     background: #544955;
     font-size: 1.2rem;
     color: #ecddc4;
@@ -360,6 +362,189 @@ button {
     padding: 20px 35px;
     margin-bottom: 20px;
 }
+
+/*carousel area*/
+
+.carousel {
+    box-sizing: content-box;
+    display: flow-root;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 3vh;
+}
+
+.carousel h3 {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #544955;
+    padding-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1.2rem;
+    text-align: justify;
+    color: #544955;
+}
+
+.card-content a {
+    color: #ecddc4;
+    transition: 0.25s all ease-in-out;
+}
+
+.card-content a:visited {
+    color: #3d4852;
+}
+
+.card-content a:focus {
+    outline: thin solid #3d4852;
+}
+
+.card-content a:hover,
+a:active {
+    outline: 0;
+}
+
+.button-card {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.card-content a.button {
+    align-items: center;
+    background-color: #3d4852;
+    border: 1px solid #3d4852;
+    border-radius: 4px;
+    color: #bac6d3;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0.25rem 0.75rem;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+.card-content a.button:hover,
+a.button:focus {
+    background-color: #58636F;
+    box-shadow: 0 0 2px 2px #bac6d3;
+}
+
+.card-content a.button:focus {
+    outline: 1px solid #3d4852;
+}
+
+.card-content a.button:visited {
+    color: #fff;
+}
+
+.carousel ul {
+    margin: 0 0 1.5rem;
+    padding: 0;
+}
+
+.carousel-items li {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+svg {
+    fill: currentColor;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.card img {
+    height: 300px;
+    width: auto;
+    margin-bottom: .5rem;
+    max-width: calc(100% + 2rem);
+    position: relative;
+    left: -1rem;
+    right: -1rem;
+}
+
+.card-content p {
+    margin: 0 0 .5rem;
+}
+
+.card {
+    border: 1px solid #bac6d3;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 25px;
+}
+
+
+/********************************
+* Carousel styles
+*********************************/
+.carousel-items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+    flex: 1 0 250px;
+    margin-left: 1rem;
+    scroll-snap-align: start;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3d4852;
+    border-radius: 3px;
+}
+
+
+/********************************
+* Breakpoints
+*********************************/
+@media screen and (min-width: 576px) {
+    .carousel-item {
+        flex-basis: 300px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .carousel-item {
+        flex-basis: 325px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .carousel-item {
+        flex-basis: 450px;
+    }
+}
+
+/*@media screen and (min-width: 1600px) {
+
+    body,
+    button,
+    input,
+    select,
+    optgroup,
+    textarea {
+        font-size: 1.25rem;
+    }
+}*/
+
+/*fin du carousel*/
 
 .footer {
     padding-top: 0.5rem;
