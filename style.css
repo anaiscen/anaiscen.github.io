@@ -409,7 +409,6 @@ a:active {
     justify-content: flex-end;
 }
 
-
 .card-content a.button {
     align-items: center;
     background-color: #3d4852;
@@ -502,7 +501,7 @@ svg {
 
 ::-webkit-scrollbar-thumb {
     background-color: #3d4852;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 
