@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+#principal {
+    background-image: linear-gradient(120deg, #f5eee3 50%, #f3ebdd 50%);
+}
+
 a {
     text-decoration: none;
 }
@@ -164,7 +168,7 @@ h2 {
 .recipe-container {
     height: 5vh;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 5px;
     position: relative;
     background-color: #ecddc4;
     margin-bottom: 20px;
@@ -270,7 +274,7 @@ ol ol {
     color: #383139;
     text-decoration: none;
     transition: all .3s ease-out;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .rectangle-list a:before{
@@ -286,7 +290,7 @@ ol ol {
     line-height: 2em;
     text-align: center;
     font-weight: bold;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .rectangle-list a:hover:after{
@@ -319,7 +323,7 @@ textarea {
     width: 30%;
     padding: 7px;
     margin-bottom: 8px;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 input[type="message"],
@@ -611,6 +615,11 @@ input[type=checkbox]{
     .carousel-item {
         flex-basis: 325px;
     }
+    .card {
+        display: block;
+        width: auto;
+        height: 520px;
+    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -638,7 +647,7 @@ input[type=checkbox]{
     .card {
         display: inline-block;
         width: 38vh;
-        height: 500px;
+        height: 520px;
     }
 
     .card img {
