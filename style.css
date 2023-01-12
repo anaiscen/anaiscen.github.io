@@ -149,15 +149,6 @@ h2 {
     padding-bottom: 20px;
 }
 
-/*.recipe-img {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: scale-down;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}*/
-
 .recipe-logo {
     width: auto;
     display: flex;
@@ -282,10 +273,6 @@ ol ol {
     border-radius: 15px;
 }
 
-.rectangle-list a:hover{
-    background: #eee;
-}
-
 .rectangle-list a:before{
     content: counter(li);
     counter-increment: li;
@@ -300,16 +287,6 @@ ol ol {
     text-align: center;
     font-weight: bold;
     border-radius: 15px;
-}
-
-.rectangle-list a:after{
-    position: absolute;
-    content: '';
-    border: .5em solid transparent;
-    left: -1em;
-    top: 50%;
-    margin-top: -.5em;
-    transition: all .3s ease-out;
 }
 
 .rectangle-list a:hover:after{
@@ -504,45 +481,6 @@ svg {
     border-radius: 2px;
 }
 
-
-/********************************
-* Breakpoints
-*********************************/
-@media screen and (min-width: 576px) {
-    .carousel-item {
-        flex-basis: 300px;
-    }
-}
-
-@media screen and (min-width: 992px) {
-
-    .carousel-item {
-        flex-basis: 325px;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    h1 {
-        font-size: 4rem;
-    }
-
-    .carousel-item {
-        flex-basis: 450px;
-    }
-}
-
-/*@media screen and (min-width: 1600px) {
-
-    body,
-    button,
-    input,
-    select,
-    optgroup,
-    textarea {
-        font-size: 1.25rem;
-    }
-}*/
-
 /*fin du carousel*/
 
 .footer {
@@ -591,7 +529,7 @@ input[type=checkbox]{
     user-select: none;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width:768px) {
     .menu {
         display: none;
         background-color: #ecddc4;
@@ -638,11 +576,74 @@ input[type=checkbox]{
         width: 100%;
         margin: 0 auto;
     }
-}
 
-@media screen and (max-width:768px) {
     .recipe-img {
         width: auto;
         height: auto;
+    }
+    header {
+        position: sticky;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030; 
+    }
+}
+
+@media screen and (max-width:768px) {
+    .card img {
+        flex-basis: auto;
+        width: 400px;
+    }
+}
+
+/********************************
+* Breakpoints carousel
+*********************************/
+@media screen and (min-width: 576px) {
+    .carousel-item {
+        flex-basis: 300px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .carousel-item {
+        flex-basis: 325px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .carousel-item {
+        flex-basis: 450px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .recipe-photo img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-item{
+        display: flex;
+        flex-basis: auto;
+    }
+
+    .card {
+        display: inline-block;
+        width: 38vh;
+        height: 500px;
+    }
+
+    .card img {
+        flex-basis: auto;
+        height: auto;
+        width: auto;
     }
 }
