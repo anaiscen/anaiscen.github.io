@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houmous</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body id="principal">
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="../index.html"><img src="../assets/logo.png" alt="Logo" height="70" width="70"></a>              
+                <ul class="nav-links">   
+                    <input type="checkbox" id="checkbox_toggle" />   
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    <div class="menu">
+                        <li><a href="../index.html#about">Notre histoire</a></li>
+                        <li><a href="../index.html#appetizer">Les entrées</a></li>
+                        <li><a href="../index.html#main-dish">Les plats</a></li>
+                        <li><a href="../index.html#dessert">Les desserts</a></li>
+                    </div>
+                </ul>
+        </nav>
+    </header>
+    <section class="recipe-header">
+        <div class="recipe-description">
+            <h1>Houmous</h1>
+            <p>Le houmous est une préparation culinaire du Proche-Orient, composée notamment de purée de pois chiches et de tahini (purée de sésame). 
+                Il s'agit d'un plat typique de la cuisine arabe, juive, arménienne et levantine, la recette traditionnelle du houmous daterait du XVe 
+                siècle et serait apparue dans différentes régions de l'Empire Ottoman.</p>
+            <p>Il est possible de préparer un houmous avec d'autres légumes secs tels que des lentilles, des haricots blancs ou noirs. On peut aussi y 
+                ajouter des herbes, d'autres légumes comme le chou-fleur ou l'artichaut et des purées d'oléagineux différentes. Et laisser ainsi libre 
+                cours à son imagination.</p>
+        </div>
+        <div class="recipe-photo">
+            <div class="recipe-img"><img src="../assets/houmous.jpg" alt="Houmous"></div>
+        </div>
+        <div class="recipe-logo">
+            <a class=""><img src="../assets/couverts.png" alt="Logo" height="18" width="18">&nbsp&nbsp4 personnes</a>
+            <a class=""><img src="../assets/euro.png" alt="Logo" height="18" width="18">&nbsp&nbsp Facile</a>
+            <a class=""><img src="../assets/toque.png" alt="Logo" height="18" width="18">&nbsp&nbsp Bon marché</a>
+        </div>
+        <div class="recipe-container">
+            <div class="recipe-label">
+                <h3><a class=""><img src="../assets/panier.png" alt="Logo" height="18" width="18">&nbsp&nbsp Ingrédients</a></h3>
+            </div>            
+        </div>
+        <div id="ingredient">
+            <label class="container-ingredient">300 g de pois chiches cuits
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">1 à 2 c. à soupe de tahin (purée de sésame)
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">2 c. à soupe d’huile d’olive vierge extra
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">1 citron jaune
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">1 à 2 gousses d’ail
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">1 c. à café de cumin en poudre
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">Quelques pluches de persil plat
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="recipe-container">
+            <div class="recipe-label">
+                <h3><a class=""><img src="../assets/preparation.png" alt="Logo" height="18" width="18">&nbsp&nbsp Préparation</a></h3>
+            </div>            
+        </div>
+        <div class="preparation-list">
+            <ol class="rectangle-list">
+                <li><a>Bien rincer les pois chiches et égoutter. Si vous avez le temps, pelez les pois un à un, pour un houmous plus digeste et à la 
+                    texture plus fine : il suffit de rouler les rouler entre le pouce et l’index et la peau s’enlève d’elle-même. Mixer les pois chiches avec 
+                    1 verre de leur eau de cuisson (sinon de l’eau), dans un robot mixeur, sinon au moulin à légumes (ce qui a l’avantage de retirer la peau 
+                    des pois chiches).</a></li>
+                <li><a>Ajouter le jus de citron — ou directement sa chair (citron pelé, épépiné). Ajouter l’huile d’olive et le tahin.</a></li>
+                <li><a>Continuer de mixer. Pendant ce temps, éplucher l’ail, ôter le germe et écraser avant de l’ajouter avec le cumin. Mixer jusqu’à obtenir une 
+                    pâte onctueuse, bien lisse. La pâte doit être lisse, bien crémeuse, fluide mais doit pouvoir se tartiner. Goûter au fur et à mesure.</a></li>
+                <li><a>Saupoudrer de persil haché et de quelques pois chiches. Servir frais. S’il en reste, garder au frais recouvert d’huile d’olive ou dans un 
+                    bol hermétique (jusqu’à 4-5 jours).</a></li>
+            </ol>
+        </div>
+        <hr class="solid">
+        <div class="form">
+            <h2>Laisser un commentaire</h2>
+            <form id="contactForm">
+                <label for="name">Nom * :</label><br>
+                <input type="text" id="name" name="name" value=""><br>
+                <label for="message">Commentaire * :</label>
+                <textarea id="message" name="message"></textarea>
+                <button onclick="myFunction()">Envoyer</button>
+            </form>
+        </div>
+    </section>    
+    <footer>
+        <div class="footer">
+            <div class="row-footer">
+                <div class="footer-brand">
+                    <a class=""><img src="../assets/logo.png" alt="Logo" height="90" width="90"></a>
+                </div>
+                <div class="copyright">                       
+                    <div><small>Copyright &copy; Anais Cen 2023</small></div>
+                </div>
+                <div class="social">
+                    <h4 class="text-uppercase mb-4">Suivez-nous</h4>
+                    <a class="" href="https://twitter.com/" target="_blank"><img src="../assets/twitter.png" alt="Logo"><i class="fab fa-fw fa-twitter"></i></a>
+                    <a class="" href="https://www.instagram.com/" target="_blank"><img src="../assets/instagram.png" alt="Logo"><i class="fa fa-instagram"></i></a>
+                    <a class="" href="https://www.facebook.com/" target="_blank"><img src="../assets/facebook.png" alt="Logo"><i class="fab fa-fw fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

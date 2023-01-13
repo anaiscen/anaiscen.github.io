@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiche lorraine</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body id="principal">
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="../index.html"><img src="../assets/logo.png" alt="Logo" height="70" width="70"></a>              
+                <ul class="nav-links">   
+                    <input type="checkbox" id="checkbox_toggle" />   
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    <div class="menu">
+                        <li><a href="../index.html#about">Notre histoire</a></li>
+                        <li><a href="../index.html#appetizer">Les entrées</a></li>
+                        <li><a href="../index.html#main-dish">Les plats</a></li>
+                        <li><a href="../index.html#dessert">Les desserts</a></li>
+                    </div>
+                </ul>
+        </nav>
+    </header>
+    <section class="recipe-header">
+        <div class="recipe-description">
+            <h1>Quiche lorraine</h1>
+            <p>La quiche lorraine est un plat traditionnel de la région de Lorraine, dans l'est de la France. Elle se compose 
+                d'une pâte brisée garnie de lardons, d'œufs et de crème, et est souvent parfumée au gruyère.</p>
+            <p>La quiche lorraine est souvent considérée comme une spécialité régionale, mais elle est également très populaire 
+                dans d'autres parties de la France et dans de nombreux pays à travers le monde. On pense qu'elle a été créée au 
+                Moyen Âge, lorsque les femmes de la région préparaient des plats avec des ingrédients simples et abondants tels 
+                que les lardons et les œufs.</p>
+            <p>Au fil des siècles, la quiche lorraine a été adaptée de nombreuses façons, avec l'ajout de différents ingrédients 
+                tels que l'oignon, les épinards, le jambon et même les légumes. Malgré ces variations, la quiche lorraine reste l'un 
+                des plats de pâte les plus populaires et appréciés dans le monde entier.</p>
+        </div>
+        <div class="recipe-photo">
+            <div class="recipe-img"><img src="../assets/quiche.jpg" alt="Quiche lorraine"></div>
+        </div>
+        <div class="recipe-logo">
+            <a class=""><img src="../assets/couverts.png" alt="Logo" height="18" width="18">&nbsp&nbsp4 personnes</a>
+            <a class=""><img src="../assets/euro.png" alt="Logo" height="18" width="18">&nbsp&nbsp Bon marché</a>
+            <a class=""><img src="../assets/toque.png" alt="Logo" height="18" width="18">&nbsp&nbsp Facile</a>
+        </div>
+        <div class="recipe-container">
+            <div class="recipe-label">
+                <h3><a class=""><img src="../assets/panier.png" alt="Logo" height="18" width="18">&nbsp&nbsp Ingrédients</a></h3>
+            </div>            
+        </div>
+        <div id="ingredient">
+            <label class="container-ingredient">1 pâte brisée
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">200g de lardons fumés
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">3 œufs
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">250ml de crème liquide
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">100g de gruyère râpé
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">Sel et poivre
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="recipe-container">
+            <div class="recipe-label">
+                <h3><a class=""><img src="../assets/preparation.png" alt="Logo" height="18" width="18">&nbsp&nbsp Préparation</a></h3>
+            </div>            
+        </div>
+        <div class="preparation-list">
+            <ol class="rectangle-list">
+                <li><a>Préchauffez le four à 180°C (th.6). Etalez la pâte brisée dans un moule à tarte et piquez-la à la fourchette. Réservez.</a></li>
+                <li><a>Dans une poêle, faites chauffer les lardons jusqu'à ce qu'ils soient croustillants. Réservez.</a></li>
+                <li><a>Dans un bol, battez les œufs et ajoutez la crème liquide, le gruyère râpé, une pincée de sel et de poivre. Mélangez bien.</a></li>
+                <li><a>Étalez les lardons sur la pâte brisée et versez la préparation aux œufs sur le dessus.</a></li>
+                <li><a>Enfournez la quiche pendant 35-40 minutes, jusqu'à ce qu'elle soit dorée et bien cuite.</a></li>
+                <li><a>Laissez tiédir avant de déguster.</a></li>
+            </ol>
+        </div>
+        <hr class="solid">
+        <div class="form">
+            <h2>Laisser un commentaire</h2>
+            <form id="contactForm">
+                <label for="name">Nom * :</label><br>
+                <input type="text" id="name" name="name" value=""><br>
+                <label for="message">Commentaire * :</label>
+                <textarea id="message" name="message"></textarea>
+                <button onclick="myFunction()">Envoyer</button>
+            </form>
+        </div>
+    </section>    
+    <footer>
+        <div class="footer">
+            <div class="row-footer">
+                <div class="footer-brand">
+                    <a class=""><img src="../assets/logo.png" alt="Logo" height="90" width="90"></a>
+                </div>
+                <div class="copyright">                       
+                    <div><small>Copyright &copy; Anais Cen 2023</small></div>
+                </div>
+                <div class="social">
+                    <h4 class="text-uppercase mb-4">Suivez-nous</h4>
+                    <a class="" href="https://twitter.com/" target="_blank"><img src="../assets/twitter.png" alt="Logo"><i class="fab fa-fw fa-twitter"></i></a>
+                    <a class="" href="https://www.instagram.com/" target="_blank"><img src="../assets/instagram.png" alt="Logo"><i class="fa fa-instagram"></i></a>
+                    <a class="" href="https://www.facebook.com/" target="_blank"><img src="../assets/facebook.png" alt="Logo"><i class="fab fa-fw fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

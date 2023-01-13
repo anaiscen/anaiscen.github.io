@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiramisu</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body id="principal">
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="../index.html"><img src="../assets/logo.png" alt="Logo" height="70" width="70"></a>              
+                <ul class="nav-links">   
+                    <input type="checkbox" id="checkbox_toggle" />   
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    <div class="menu">
+                        <li><a href="../index.html#about">Notre histoire</a></li>
+                        <li><a href="../index.html#appetizer">Les entrées</a></li>
+                        <li><a href="../index.html#main-dish">Les plats</a></li>
+                        <li><a href="../index.html#dessert">Les desserts</a></li>
+                    </div>
+                </ul>
+        </nav>
+    </header>
+    <section class="recipe-header">
+        <div class="recipe-description">
+            <h1>Tiramisu</h1>
+            <p>Le tiramisu est un dessert italien très populaire à base de mascarpone, de biscuits à la cuillère et de café. Sa recette originale est controversée, 
+                mais il est généralement accepté que le tiramisu a été créé dans les années 1960 ou 1970 dans la région de Venise, en Italie. Selon une légende, le 
+                tiramisu aurait été inventé par un cuisinier du restaurant Le Beccherie, à Trévise, en Italie. Selon cette légende, le cuisinier aurait créé le tiramisu 
+                en utilisant des ingrédients simples et faciles à trouver, comme du mascarpone, des œufs, du sucre, du café et des biscuits à la cuillère, afin de 
+                satisfaire les demandes de ses clients qui voulaient un dessert rapide et facile à préparer.</p>
+            <p>Le nom "tiramisu" signifie littéralement "tire-moi vers le haut" en italien, et fait référence à la légende selon laquelle ce dessert est censé donner de 
+                l'énergie et du "coup de boost". Le tiramisu est devenu rapidement très populaire en Italie et s'est répandu dans le monde entier. Aujourd'hui, il est 
+                servi dans de nombreux restaurants et est également facile à préparer à la maison.</p>
+        </div>
+        <div class="recipe-photo">
+            <div class="recipe-img"><img src="../assets/tiramisu.jpg" alt="Tiramisu"></div>
+        </div>
+        <div class="recipe-logo">
+            <a class=""><img src="../assets/couverts.png" alt="Logo" height="18" width="18">&nbsp&nbsp6 personnes</a>
+            <a class=""><img src="../assets/euro.png" alt="Logo" height="18" width="18">&nbsp&nbsp Bon marché</a>
+            <a class=""><img src="../assets/toque.png" alt="Logo" height="18" width="18">&nbsp&nbsp Facile</a>
+        </div>
+        <div class="recipe-container">
+            <div class="recipe-label">
+                <h3><a class=""><img src="../assets/panier.png" alt="Logo" height="18" width="18">&nbsp&nbsp Ingrédients</a></h3>
+            </div>            
+        </div>
+        <div id="ingredient">
+            <label class="container-ingredient">250 g de mascarpone
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">4 œufs
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">50 g de sucre
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">1 cuillère à café d'extrait de vanille
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">250 ml de café fort, refroidi
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">1 paquet de biscuits à la cuillère
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">Cacao en poudre
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="recipe-container">
+            <div class="recipe-label">
+                <h3><a class=""><img src="../assets/preparation.png" alt="Logo" height="18" width="18">&nbsp&nbsp Préparation</a></h3>
+            </div>            
+        </div>
+        <div class="preparation-list">
+            <ol class="rectangle-list">
+                <li><a>Séparez les blancs des jaunes d'œufs.</a></li>
+                <li><a>Battez les jaunes d'œufs avec le sucre jusqu'à ce qu'ils deviennent blancs et mousseux.</a></li>
+                <li><a>Ajoutez le mascarpone et l'extrait de vanille et mélangez bien jusqu'à ce que la crème soit lisse.</a></li>
+                <li><a>Montez les blancs en neige ferme et incorporez-les délicatement à la crème au mascarpone.</a></li>
+                <li><a>Dans un plat à grands bords, versez une couche de crème au mascarpone.</a></li>
+                <li><a>Posez par-dessus une couche de biscuits trempés dans le café.</a></li>
+                <li><a>Répétez l'opération une seconde fois, en terminant par une couche de crème.</a></li>
+                <li><a>Réfrigérez le tiramisu pendant au moins 3 heures, ou jusqu'à ce qu'il soit bien froid.</a></li>
+                <li><a>Avant de servir, saupoudrez de cacao en poudre.</a></li>
+            </ol>
+        </div>
+        <hr class="solid">
+        <div class="form">
+            <h2>Laisser un commentaire</h2>
+            <form id="contactForm">
+                <label for="name">Nom * :</label><br>
+                <input type="text" id="name" name="name" value=""><br>
+                <label for="message">Commentaire * :</label>
+                <textarea id="message" name="message"></textarea>
+                <button onclick="myFunction()">Envoyer</button>
+            </form>
+        </div>
+    </section>    
+    <footer>
+        <div class="footer">
+            <div class="row-footer">
+                <div class="footer-brand">
+                    <a class=""><img src="../assets/logo.png" alt="Logo" height="90" width="90"></a>
+                </div>
+                <div class="copyright">                       
+                    <div><small>Copyright &copy; Anais Cen 2023</small></div>
+                </div>
+                <div class="social">
+                    <h4 class="text-uppercase mb-4">Suivez-nous</h4>
+                    <a class="" href="https://twitter.com/" target="_blank"><img src="../assets/twitter.png" alt="Logo"><i class="fab fa-fw fa-twitter"></i></a>
+                    <a class="" href="https://www.instagram.com/" target="_blank"><img src="../assets/instagram.png" alt="Logo"><i class="fa fa-instagram"></i></a>
+                    <a class="" href="https://www.facebook.com/" target="_blank"><img src="../assets/facebook.png" alt="Logo"><i class="fab fa-fw fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
