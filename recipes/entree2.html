@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruschetta tomates mozzarella</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body id="principal">
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="../index.html"><img src="../assets/logo.png" alt="Logo" height="70" width="70"></a>              
+                <ul class="nav-links">   
+                    <input type="checkbox" id="checkbox_toggle" />   
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    <div class="menu">
+                        <li><a href="../index.html#about">Notre histoire</a></li>
+                        <li><a href="../index.html#appetizer">Les entrées</a></li>
+                        <li><a href="../index.html#main-dish">Les plats</a></li>
+                        <li><a href="../index.html#dessert">Les desserts</a></li>
+                    </div>
+                </ul>
+        </nav>
+    </header>
+    <section class="recipe-header">
+        <div class="recipe-description">
+            <h1>Bruschetta tomates mozzarella</h1>
+            <p>La bruschetta est une préparation culinaire traditionnelle d'antipasti issue du besoin des agriculteurs de conserver le pain, typique de l
+                a cuisine italienne. Originaire de Naples et désormais diffusé dans toute l'Italie et en dehors de ses frontières. </p>
+                <p>Pour faire une bonne bruschetta, il faut des ingrédients de haute qualité : du bon pain, une délicieuse huile d’olive extra vierge, de 
+                    l’ail et des tomates bien fraiches. Aujourd’hui, il existe de nombreuses variantes toutes aussi délicieuses les unes que les autres à 
+                    base de mozzarella, d'artichaut, de parmesan, d’aubergines, de poivrons… et qui régalent les férus d’antipasti.</p>
+        </div>
+        <div class="recipe-photo">
+            <div class="recipe-img"><img src="../assets/bruschetta.jpg" alt="Bruschetta"></div>
+        </div>
+        <div class="recipe-logo">
+            <a class=""><img src="../assets/couverts.png" alt="Logo" height="18" width="18">&nbsp&nbsp4 personnes</a>
+            <a class=""><img src="../assets/euro.png" alt="Logo" height="18" width="18">&nbsp&nbsp Bon marché</a>
+            <a class=""><img src="../assets/toque.png" alt="Logo" height="18" width="18">&nbsp&nbsp Facile</a>
+        </div>
+        <div class="recipe-container">
+            <div class="recipe-label">
+                <h3><a class=""><img src="../assets/panier.png" alt="Logo" height="18" width="18">&nbsp&nbsp Ingrédients</a></h3>
+            </div>            
+        </div>
+        <div id="ingredient">
+            <label class="container-ingredient">8 tranches de pain de campagne
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">5 belles tomates rondes
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">250 g de mozzarella
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">1 gousse d'ail
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">4 feuilles de basilic
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">Huile d'olive vierge extra
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">Poivre au moulin
+                <input type="checkbox">
+                <span class="checkmark"></span>
+        </div>
+        <div class="recipe-container">
+            <div class="recipe-label">
+                <h3><a class=""><img src="../assets/preparation.png" alt="Logo" height="18" width="18">&nbsp&nbsp Préparation</a></h3>
+            </div>            
+        </div>
+        <div class="preparation-list">
+            <ol class="rectangle-list">
+                <li><a>Préchauffez votre four à 200°C.</a></li>
+                <li><a>Couper les tomates en tranches, en retirant les graines et le jus. Versez-les dans un bol avec une cuillère d’huile d’olive, salez, 
+                    poivrez et mélangez. Égouttez la mozzarella et coupez-la en tranches. Pelez et dégermez l’ail. Hachez les feuilles de basilic.</a></li>
+                <li><a> Faites griller les tranches de pain sur les deux faces. Frottez-les avec l’ail et arrosez-les d’un filet d’huile d’olive. Déposez 
+                    dessus une tranche de tomate, puis une tranche de mozzarella en alternance, jusqu’à couvrir chaque tartine. Enfournez 5 minutes environ, 
+                    jusqu’à ce que la mozzarella fonde.</a></li>
+                <li><a>Sortez les bruschetta du four. Donnez un tour de moulin à poivre, parsemez de basilic haché et dégustez aussitôt.</a></li>
+            </ol>
+        </div>
+        <hr class="solid">
+        <div class="form">
+            <h2>Laisser un commentaire</h2>
+            <form id="contactForm">
+                <label for="name">Nom * :</label><br>
+                <input type="text" id="name" name="name" value=""><br>
+                <label for="message">Commentaire * :</label>
+                <textarea id="message" name="message"></textarea>
+                <button onclick="myFunction()">Envoyer</button>
+            </form>
+        </div>
+    </section>    
+    <footer>
+        <div class="footer">
+            <div class="row-footer">
+                <div class="footer-brand">
+                    <a class=""><img src="../assets/logo.png" alt="Logo" height="90" width="90"></a>
+                </div>
+                <div class="copyright">                       
+                    <div><small>Copyright &copy; Anais Cen 2023</small></div>
+                </div>
+                <div class="social">
+                    <h4 class="text-uppercase mb-4">Suivez-nous</h4>
+                    <a class="" href="https://twitter.com/" target="_blank"><img src="../assets/twitter.png" alt="Logo"><i class="fab fa-fw fa-twitter"></i></a>
+                    <a class="" href="https://www.instagram.com/" target="_blank"><img src="../assets/instagram.png" alt="Logo"><i class="fa fa-instagram"></i></a>
+                    <a class="" href="https://www.facebook.com/" target="_blank"><img src="../assets/facebook.png" alt="Logo"><i class="fab fa-fw fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

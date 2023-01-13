@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crème brûlée</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body id="principal">
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="../index.html"><img src="../assets/logo.png" alt="Logo" height="70" width="70"></a>              
+                <ul class="nav-links">   
+                    <input type="checkbox" id="checkbox_toggle" />   
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    <div class="menu">
+                        <li><a href="../index.html#about">Notre histoire</a></li>
+                        <li><a href="../index.html#appetizer">Les entrées</a></li>
+                        <li><a href="../index.html#main-dish">Les plats</a></li>
+                        <li><a href="../index.html#dessert">Les desserts</a></li>
+                    </div>
+                </ul>
+        </nav>
+    </header>
+    <section class="recipe-header">
+        <div class="recipe-description">
+            <h1>Crème brûlée</h1>
+            <p>La crème brûlée, également connue sous le nom de "crème caramel" ou "flan à l'anglaise", est un dessert à base de crème, de sucre et de jaunes d'œufs 
+                cuit au bain-marie et recouvert d'un caramel croustillant. Il est difficile de dire avec précision d'où vient la crème brûlée et qui en est l'inventeur. 
+                Certaines sources attribuent l'invention de ce dessert au chef cuisinier français François Massialot, qui a publié une recette de crème brûlée dans 
+                son livre de cuisine "Le Cuisinier Royal et Bourgeois" en 1691. D'autres sources font remonter l'origine de la crème brûlée à la cuisine espagnole du 
+                XVIIe siècle, où elle était connue sous le nom de "flan" ou "crema catalana".</p>
+            <p>Quoi qu'il en soit, la crème brûlée est devenue un dessert très populaire en France au XVIIIe siècle et a rapidement été adoptée dans de nombreux 
+                autres pays. Aujourd'hui, elle est servie dans de nombreux restaurants et est également facile à préparer à la maison.</p>
+        </div>
+        <div class="recipe-photo">
+            <div class="recipe-img"><img src="../assets/cremebrulee.jpg" alt="Crème brûlée"></div>
+        </div>
+        <div class="recipe-logo">
+            <a class=""><img src="../assets/couverts.png" alt="Logo" height="18" width="18">&nbsp&nbsp6 personnes</a>
+            <a class=""><img src="../assets/euro.png" alt="Logo" height="18" width="18">&nbsp&nbsp Bon marché</a>
+            <a class=""><img src="../assets/toque.png" alt="Logo" height="18" width="18">&nbsp&nbsp Facile</a>
+        </div>
+        <div class="recipe-container">
+            <div class="recipe-label">
+                <h3><a class=""><img src="../assets/panier.png" alt="Logo" height="18" width="18">&nbsp&nbsp Ingrédients</a></h3>
+            </div>            
+        </div>
+        <div id="ingredient">
+            <label class="container-ingredient">500 ml de crème à 35% de matière grasse
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">100 g de sucre
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">1 gousse de vanille
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">6 jaunes d'œufs
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-ingredient">Sucre en grains (pour la finition)
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="recipe-container">
+            <div class="recipe-label">
+                <h3><a class=""><img src="../assets/preparation.png" alt="Logo" height="18" width="18">&nbsp&nbsp Préparation</a></h3>
+            </div>            
+        </div>
+        <div class="preparation-list">
+            <ol class="rectangle-list">
+                <li><a>Dans une casserole, chauffez la crème avec la gousse de vanille fendue et grattée. Retirez du feu dès que la crème commence à frémir.</a></li>
+                <li><a>Dans un bol, mélangez les jaunes d'œufs et le sucre jusqu'à ce que le mélange blanchisse.</a></li>
+                <li><a>Retirez la gousse de vanille de la crème chaude et versez cette dernière sur les jaunes d'œufs en mélangeant constamment.</a></li>
+                <li><a>Préchauffez le four à 150°C (th.5).</a></li>
+                <li><a>Versez la préparation dans 6 ramequins et placez-les dans un plat allant au four. Versez de l'eau chaude dans le plat jusqu'à mi-hauteur des ramequins.</a></li>
+                <li><a>Enfournez pendant 45 minutes environ, jusqu'à ce que la crème soit prise mais encore tremblotante.</a></li>
+                <li><a>Sortez les ramequins du four et laissez-les refroidir avant de les mettre au réfrigérateur pendant au moins 3 heures.</a></li>
+                <li><a>Avant de servir, saupoudrez de sucre en grains sur chaque crème brûlée et caramélisez-les à l'aide d'un chalumeau ou en les passant sous le grill du four jusqu'à 
+                    ce que le sucre soit bien fondu et caramelisé.</a></li>
+            </ol>
+        </div>
+        <hr class="solid">
+        <div class="form">
+            <h2>Laisser un commentaire</h2>
+            <form id="contactForm">
+                <label for="name">Nom * :</label><br>
+                <input type="text" id="name" name="name" value=""><br>
+                <label for="message">Commentaire * :</label>
+                <textarea id="message" name="message"></textarea>
+                <button onclick="myFunction()">Envoyer</button>
+            </form>
+        </div>
+    </section>    
+    <footer>
+        <div class="footer">
+            <div class="row-footer">
+                <div class="footer-brand">
+                    <a class=""><img src="../assets/logo.png" alt="Logo" height="90" width="90"></a>
+                </div>
+                <div class="copyright">                       
+                    <div><small>Copyright &copy; Anais Cen 2023</small></div>
+                </div>
+                <div class="social">
+                    <h4 class="text-uppercase mb-4">Suivez-nous</h4>
+                    <a class="" href="https://twitter.com/" target="_blank"><img src="../assets/twitter.png" alt="Logo"><i class="fab fa-fw fa-twitter"></i></a>
+                    <a class="" href="https://www.instagram.com/" target="_blank"><img src="../assets/instagram.png" alt="Logo"><i class="fa fa-instagram"></i></a>
+                    <a class="" href="https://www.facebook.com/" target="_blank"><img src="../assets/facebook.png" alt="Logo"><i class="fab fa-fw fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
